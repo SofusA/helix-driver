@@ -6,7 +6,7 @@ pull-requests = [
   "11315", # Pull diagnostics
   "11497", # Rounded corners
   # "13530", # Rainbow tree sitter
-  "12022", # JG diff provider
+  # "12022", # JG diff provider
   # "13133", # Inline git blame
 ]
 

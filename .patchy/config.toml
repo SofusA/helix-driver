@@ -1,0 +1,13 @@
+repo = "helix-editor/helix"
+remote-branch = "master"
+local-branch = "patchy"
+
+pull-requests = [
+  "11315", # Pull diagnostics
+  "11497", # Rounded corners
+  # "13530", # Rainbow tree sitter
+  # "13133", # Inline git blame
+]
+
+branches = []
+patches = []

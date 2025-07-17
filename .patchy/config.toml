@@ -10,7 +10,7 @@ pull-requests = [
   # "13133", # Inline git blame # Merge conflicts
   # "12520", # Picker title # Patchy conflicts
   "12369", # Icons
-  "8675", # steel
+  # "8675", # steel
   # "13963", # Automatic reload when file changes externally
 ]
 

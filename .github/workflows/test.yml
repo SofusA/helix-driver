@@ -1,0 +1,40 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: set up rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+
+      - name: install patchy
+        run: cargo install --git https://github.com/nik-rev/patchy
+
+      - name: git
+        run: git config --global user.email "you@example.com"; git config --global user.name "Your Name"
+
+      - name: patchy run
+        run: |
+          output=$(patchy run --confirm yes 2>stderr.log)
+          if [ -s stderr.log ]; then
+            echo "Error output detected:"
+            cat stderr.log
+            exit 1
+          fi
+          echo "$output"
+      
+      - name: build
+        run: cargo build --profile opt --locked

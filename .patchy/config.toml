@@ -4,13 +4,13 @@ local-branch = "patchy"
 
 pull-requests = [
   "11315", # Pull diagnostics
+  # "8675", # steel
   "11497", # Rounded corners
   "13530", # Rainbow tree sitter # Merge conflicts
-  # "12022", # JJ diff provider # Not working
+  "12369", # Icons
+  "12022", # JJ diff provider # Not working
   # "13133", # Inline git blame # Merge conflicts
   # "12520", # Picker title # Patchy conflicts
-  "12369", # Icons
-  "8675", # steel
   # "13963", # Automatic reload when file changes externally
 ]
 

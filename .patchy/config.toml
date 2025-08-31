@@ -8,7 +8,7 @@ pull-requests = [
   "11497", # Rounded corners
   "12369", # Icons
   # "12022", # JJ diff provider
-  "14118", # indent guides
+  # "14118", # indent guides
   # "13133", # Inline git blame # Merge conflicts
   # "12520", # Picker title # Patchy conflicts
   # "13963", # Automatic reload when file changes externally

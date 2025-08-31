@@ -7,7 +7,7 @@ pull-requests = [
   # "8675", # steel
   "11497", # Rounded corners
   "12369", # Icons
-  "12022", # JJ diff provider
+  # "12022", # JJ diff provider
   "14118", # indent guides
   # "13133", # Inline git blame # Merge conflicts
   # "12520", # Picker title # Patchy conflicts

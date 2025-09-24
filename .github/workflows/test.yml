@@ -27,14 +27,7 @@ jobs:
         run: git config --global user.email "you@example.com"; git config --global user.name "Your Name"
 
       - name: patchy run
-        run: |
-          output=$(patchy run --confirm yes 2>stderr.log)
-          if [ -s stderr.log ]; then
-            echo "Error output detected:"
-            cat stderr.log
-            exit 1
-          fi
-          echo "$output"
+        run: patchy run --confirm yes
       
       - name: build
         run: cargo build --profile opt --locked

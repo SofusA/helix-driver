@@ -1,9 +1,11 @@
+# repo = "helix-editor/helix"
+# remote-branch = "master"
 repo = "helix-editor/helix"
 remote-branch = "master"
 local-branch = "patchy"
 
 pull-requests = [
-  "8675", # steel
+  # "8675", # steel
   "11497", # Rounded corners
   # "12369", # Icons
   # "12022", # JJ diff provider

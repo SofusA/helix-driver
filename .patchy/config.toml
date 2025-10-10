@@ -1,7 +1,7 @@
 # repo = "helix-editor/helix"
 # remote-branch = "master"
-repo = "helix-editor/helix"
-remote-branch = "master"
+repo = "mattwparas/helix"
+remote-branch = "steel-event-system"
 local-branch = "patchy"
 
 pull-requests = [
